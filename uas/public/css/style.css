@@ -1,0 +1,291 @@
+.div {
+    background-color: #fff;
+  }
+  
+  .div-2 {
+    display: flex;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 616px;
+    margin-left: 0px;
+  }
+  
+  @media (max-width: 991px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  .img {
+    aspect-ratio: 0.6;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  @media (max-width: 991px) {
+    .img {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .alert{
+    color: #ef4444;
+  }
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 60%; /* Mengikuti lebar .div-2 */
+    justify-content: center; /* Menengahkan secara vertikal di kolom 2 */
+    overflow-y: auto;
+  }
+  
+  .div-3 {
+    display: flex;
+    flex-direction: column;
+    width: 584px;
+    height: auto; /* Tinggi disesuaikan dengan konten */
+    margin: auto; /* Menengahkan secara horizontal dan vertikal di dalam kolom 2 pada media query */
+  }
+  
+  .div-4 {
+    align-self: center;
+    display: flex;
+  }
+  
+  @media (max-width: 991px) {
+    .div-4 {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .img-2 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 80px;
+  }
+  .login-container { display: flex; max-width: 584px; flex-direction: column; }
+  .header { align-self: center; display: flex; gap: 16px; }
+  .logo { aspect-ratio: 1; object-fit: auto; object-position: center; width: 80px; }
+  .header-text { display: flex; flex-direction: column; margin: auto 0; padding: 0 20px; }
+  .faculty-name { color: #0f172a; font: 600 24px Poppins, sans-serif; }
+  .university-name { color: #64748b; font: 400 16px Poppins, sans-serif; }
+  .main-content { justify-content: center; display: flex; margin-top: 40px; width: 100%; flex-direction: column; font-size: 16px; padding: 0 40px; }
+  .login-title { color: #0f172a; align-self: center; font: 600 24px Poppins, sans-serif; }
+  .login-subtitle { color: #64748b; font-family: Poppins, sans-serif; font-weight: 400; align-self: center; margin-top: 4px; }
+  .input-label { align-self: start; display: flex; margin-top: 40px; gap: 4px; font-weight: 600; white-space: nowrap; }
+  .label-text { color: #1e293b; font-family: Poppins, sans-serif; }
+  .required { color: #ef4444; font-family: Poppins, sans-serif; }
+  .input-field { align-items: start; border-radius: 8px; border: 1px solid #e2e8f0; background-color: #fff; margin-top: 8px; color: #cbd5e1; justify-content: center; padding: 16px; font: 400 14px Poppins, sans-serif; width: 100%; }
+  .password-input { display: flex; align-items: center; }
+  .password-field { flex: 1; border: none; background: transparent; font: 400 14px Poppins, sans-serif; color: #cbd5e1; }
+  .password-toggle { aspect-ratio: 1; object-fit: auto; object-position: center; width: 20px; cursor: pointer; }
+  .forgot-password { color: #64748b; text-align: right; font-family: Poppins, sans-serif; font-weight: 400; margin-top: 16px; }
+  .login-button { font-family: Poppins, sans-serif; justify-content: center; align-items: center; border-radius: 8px; box-shadow: 0px 5px 20px 0px rgba(183, 183, 183, 0.1); background-color: #0ea5e9; margin-top: 40px; color: #fff; font-weight: 500; white-space: nowrap; text-align: center; padding: 12px 60px; border: none; cursor: pointer; width: 100%; }
+  .signup-section { justify-content: center; align-items: center; display: flex; margin-top: 24px; text-align: center; line-height: 150%; padding: 0 60px; }
+  .signup-text { display: flex; gap: 4px; }
+  .signup-question { color: #94a3b8; font-family: Poppins, sans-serif; font-weight: 400; }
+  .signup-link { color: #0f172a; font-family: Poppins, sans-serif; font-weight: 600; text-decoration: none; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+  @media (max-width: 991px) {
+    .main-content { max-width: 100%; padding: 0 20px; }
+    .input-label { white-space: initial; }
+    .input-field { max-width: 100%; padding-right: 20px; }
+    .password-input { flex-wrap: wrap; }
+    .password-field { max-width: 100%; }
+    .forgot-password, .login-button { max-width: 100%; }
+    .login-button { white-space: initial; padding: 12px 20px; }
+    .signup-section { max-width: 100%; padding: 0 20px; }
+  }
+  
+  
+  
+  .registration-container {
+    display: flex;
+    max-width: 584px;
+    flex-direction: column;
+  }
+  
+  .header {
+    align-self: center;
+    display: flex;
+    gap: 16px;
+  }
+  
+  .logo {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 80px;
+  }
+  
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    padding: 0 20px;
+  }
+  
+  .faculty-name {
+    color: var(--Slate-900, #0f172a);
+    font: 600 24px Poppins, sans-serif;
+  }
+  
+  .university-name {
+    color: var(--Slate-500, #64748b);
+    font: 400 16px Poppins, sans-serif;
+  }
+  
+  .form-container {
+    justify-content: center;
+    display: flex;
+    margin-top: 64px;
+    width: 100%;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 0 40px;
+  }
+  
+  .form-title {
+    color: var(--Slate-900, #0f172a);
+    align-self: center;
+    font: 600 24px Poppins, sans-serif;
+  }
+  
+  .form-subtitle {
+    color: var(--Slate-500, #64748b);
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    align-self: center;
+    margin-top: 4px;
+  }
+  
+  .form-group {
+    align-self: start;
+    display: flex;
+    margin-top: 16px;
+    gap: 4px;
+    font-weight: 600;
+  }
+  
+  .form-label {
+    color: var(--Slate-800, #1e293b);
+    font-family: Poppins, sans-serif;
+  }
+  
+  .required {
+    color: var(--Danger-500, #ef4444);
+    font-family: Poppins, sans-serif;
+  }
+  
+  .form-input {
+    align-items: start;
+    border-radius: 8px;
+    border: 1px solid rgba(226, 232, 240, 1);
+    background-color: var(--Slate-0, #fff);
+    margin-top: 8px;
+    color: var(--Slate-300, #cbd5e1);
+    justify-content: center;
+    padding: 16px;
+    font: 400 14px Poppins, sans-serif;
+    width: 100%;
+  }
+  
+  .form-select {
+    border-radius: 8px;
+    border: 1px solid rgba(226, 232, 240, 1);
+    background-color: var(--Slate-0, #fff);
+    display: flex;
+    margin-top: 8px;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--Slate-300, #cbd5e1);
+    font-weight: 400;
+    padding: 16px;
+    width: 100%;
+  }
+  
+  .select-text {
+    font-family: Poppins, sans-serif;
+    flex: 1;
+  }
+  
+  .select-icon {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+    align-self: start;
+  }
+  
+  .submit-button {
+    font-family: Poppins, sans-serif;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px 0px rgba(183, 183, 183, 0.1);
+    background-color: var(--Sky-500, #0ea5e9);
+    margin-top: 40px;
+    color: var(--Slate-0, #fff);
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: right;
+    padding: 12px 60px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-link-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 24px;
+    text-align: center;
+    line-height: 150%;
+    padding: 0 60px;
+  }
+  
+  .login-text {
+    color: var(--Slate-400, #94a3b8);
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+  }
+  
+  .login-link {
+    color: var(--Slate-900, #0f172a);
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 991px) {
+    .form-container {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  
+    .form-input,
+    .form-select,
+    .select-text {
+      max-width: 100%;
+    }
+  
+    .submit-button {
+      max-width: 100%;
+      white-space: initial;
+      padding: 12px 20px;
+    }
+  
+    .login-link-container {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
